@@ -3,47 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coffee Masters</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+    />
 </head>
 <body>
     <nav class="nav-bar">
         <h1 class="branding">
-            <img src="https://freepngimg.com/thumb/dice/81025-art-dice-dungeons-system-dragons-d20-triangle.png" 
+            <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" 
             alt="logo" class="logo">
-            Gamer's Cove
-            <img src="https://freepngimg.com/thumb/dice/81025-art-dice-dungeons-system-dragons-d20-triangle.png" 
-            alt="logo" class="logo">
-
+            Coffee Masters
         </h1>
     </nav>
-
-    <div>
-        <section class="game-box box">
-            <a href="word.html">
-                <h2 class="game-name">Word Smith</h2>
+    <div class="page">
+        <section class="order-box box">
+            <h2 class="box-label">ITEMS</h2>
+            <ul class="items">
+                <li class="item">
+                    <div class="item-quantity">1x</div>
+                    <div class="item-name">Cappucino</div>
+                    <div class="item-price">$6.00</div>
+                    <ul>
+                        <li class="sub-items">Light Foam</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <div class="item-quantity">1x</div>
+                    <div class="item-name">Cappucino</div>
+                    <div class="item-price">$7.90</div>
+                    <ul>
+                        <li class="sub-items">Almond Milk</li>
+                        <li class="sub-items">Double Espresso Shot</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <div class="item-quantity">1x</div>
+                    <div class="item-name">Croissant</div>
+                    <div class="item-price">$5.37</div>
+                    <ul>
+                        <li class="sub-items">Butter</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="info-box">
+            <div class="name-box box">
+                <h2 class="box-label">NAME</h2>
+                <div class="input-box">
+                    <label class="input-tag" for="name">Name for order</label>
+                    <input type="text" class="input-user" id="name">
+                </div>
+            </div>
+            <div class="payment-box box">
+                <h2 class="box-label">PAYMENT</h2>
+                <div class="input-box">
+                    <label class="input-tag" for="ccn">Card Number</label>
+                    <input type="text" class="input-user" id="card">
+                </div>
+                <div class="input-box">
+                    <label class="input-tag" for="ccvn">CCV Number</label>
+                    <input type="text" class="input-user" id="ccv">
+                </div>
+            </div>
+        </section>
+        <section class="totals">
+            <table class="table-tots">
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$19.27</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$0.96</td>
+                </tr>
+                <tr class="final-total">
+                    <td>Total:</td>
+                    <td>$20.23</td>
+                </tr>
+            </table>
+            <a class="button-connect" href="game.html">
+                <button class="place-order" type="button">Place Order</button>
             </a>
-            <img src="https://static.ffx.io/images/$zoom_1.4299346592720086%2C$multiply_0.7554%2C$ratio_1.776846%2C$width_1059%2C$x_300%2C$y_406/t_crop_custom/q_86%2Cf_auto/6239ea9cdc7c94b4c798248914b8e63afd2aafeb">
-            
         </section>
-        <section class="game-box box">
-            <a href="future.html">
-                <h2 class="game-name">Future Vision</h2>
-            </a>
-            <img src="https://p7.hiclipart.com/preview/90/451/830/magic-8-ball-8-ball-pool-eight-ball-crystal-ball-8.jpg">
-            
-        </section>
-        <section class="game-box box">
-            <a href="wit.html">
-                <h2 class="game-name">Battle of Wits</h2>
-            </a>
-            <img src="https://png.pngtree.com/png-vector/20220420/ourmid/pngtree-tic-tac-toe-pattern-png-png-image_4549871.png">
-            
-        </section>
-        <section class="final-boss">
-            <button class="inspo" type="button">Bardic Inspiration</button>
-        </section>
-
     </div>
-    
 </body>
 </html>

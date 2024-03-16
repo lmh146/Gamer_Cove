@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const gameContainer = document.getElementById('game_container');
     let cards = [];
 
-    // Create card elements and add to the game container
+    // Creating card elements and adding to the game container
     for (let i = 0; i < images.length; i++) {
         const cardElement = createCardElement(images[i]);
         cards.push(cardElement);
@@ -31,9 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Shuffle the cards
     shuffle(cards);
-    console.log(cards);
 
-    // Attach event listeners to the cards
+    // Adding event listeners for the cards
     cards.forEach(card => {
         card.addEventListener('click', () => flipCard(card));
     });
@@ -64,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             disableCards(flippedCard, secondCard);
             matchedPairs++;
 
-            // Check if all pairs are matched
+            // Checking if all matches have been found
             if (matchedPairs === images.length / 2) {
                 setTimeout(() => {
                     unflipAllCards()
@@ -94,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 1000);
     }
 
+    // Creating card element for HTML
     function createCardElement(imageUrl) {
         const card = document.createElement('li');
         card.classList.add('card');
@@ -108,7 +108,8 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         return card;
     }
-
+    
+    // Shuffling cards to randomize matches
     function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
